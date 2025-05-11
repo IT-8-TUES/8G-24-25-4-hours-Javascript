@@ -8,26 +8,40 @@
     
     <header>
         <h1>Историята на Tetris – Първи стъпки и правни усложнения</h1>  <!-- Tva si e zaglavie ama se polzwa samo vednuj -->
-        <nav>
+        <nav>  <!-- nav tagga opredelq navigaciqta na sekciqta -->
             <ul>
                 <li><a href="#step1">Първи стъпки</a></li>  <!-- a si slaga link a step1 nasochva kum taq sekciq -->
-                <li><a href="#legal">Сложности с правата</a></li>
+                <li><a href="#prava">Сложности с правата</a></li>
             </ul>
         </nav>
-    </header>
+    </header> <!-- v headera stoqt logo navigaciq zaglavie i dr  -->
     <section id="step1"> <!-- section grupira i otdelq info svurzana s h2,a id e za da moje linka da otvede do sekciqta  -->
     <h2> Първи стъпки към лицензиране</h2> <!-- Tva si e kat podzaglavie -->
+    <img src="https://parade.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk3NDE1OTEyMzM5NDE2OTg3/henk-rogers-tetris-environment.jpg" alt= "Хенк Роджърс" height="450" width="600">
+        <!-- src opedelq url adresa na imega a alt e teskt ako snimkata ne zarejda i width si e shirinata na snimkata a alt si e dopulnenie kum snimkata-->
     <p>
-        Хенк Роджърс, предприемач, установен в Япония, открива играта Tetris през 1988 г. и веднага разпознава нейния потенциал.
-        Той придобива лиценз за разпространение на играта в Япония за компютри и аркадни машини чрез сделка с британския бизнесмен Робърт Стайн.
+        Въпреки ентусиазма, Роджърс се сблъсква с огромни проблеми относно правата за разпространение на Tetris. Става ясно, че правата са разделени и неясно дефинирани между няколко страни:
+    </p>
+    <ul>
+        <li><b>Робърт Стайн</b> – британски предприемач, който първи прави договор с ELORG, но без да получи официални права за всички платформи.</li>
+        <li><b>Mirrorsoft</b> – компания на Робърт Максуел, която също претендира за определени територии.</li>
+        <li><b>Spectrum HoloByte</b> – американски издател, който получава права от Стайн и започва разпространение в САЩ.</li>
+        <li><b>Tengen</b> – дъщерна компания на Atari, която пуска своя версия за NES без изричен лиценз, водещо до съдебен процес с Nintendo.</li>
+    </ul>
+      <!-- ul e nepodreden list a li si e element ot lista -->
+    <p>
+        Роджърс предприема рисковано пътуване до СССР, където лично се среща с представители на <b>ELORG</b> – държавната организация, която държи оригиналните права върху играта, тъй като е разработена от Алексей Пажитнов, съветски инженер.
+        </p>
+    <p>
+        След интензивни преговори и демонстриране на почтеност, Роджърс успява да убеди ELORG да му предостави <em>официален лиценз за преносими устройства</em>, какъвто никой от другите участници не е имал.
     </p>
     <p>
-        По-късно Хенк предлага на <b>Nintendo</b> идеята да включат <b>Tetris</b> като основна игра за новата им преносима конзола <em>Game Boy</em>.
-        Вместо планираната Super Mario Land, той ги убеждава, че Tetris може да привлече по-широка аудитория – както деца, така и възрастни, които обикновено не играят видеоигри.
+        Това изиграва решаваща роля в глобалния успех на Tetris, защото Nintendo получава легално предимство, а конкурентите са принудени да оттеглят своите версии. В крайна сметка, правата са изчистени и Роджърс става близък приятел с Пажитнов, с когото по-късно създават компанията The Tetris Company.
     </p>
-    </section>
-    <section id="legal">
+</section>
+    <section id="prava">
     <h2> Сложности с правата и конкуренцията</h2>
+     <img src="https://images.nintendolife.com/4fe09159acc52/alexey-pajitnov.large.jpg" alt="Алексей Пажинтов" height="450" width="600">
     <p>
         Хенк осъзнава, че правата върху Tetris са силно объркани и разпределени между различни компании и лица:
     </p>
@@ -46,7 +60,7 @@
     </p>
     </section>
     <footer>
-        <p>Авторски права https://bg.wikipedia.org/wiki/%D0%A2%D0%B5%D1%82%D1%80%D0%B8%D1%81; 2025 Историята на Tetris. Всички права запазени.</p>
+        <p>Авторски права https://bg.wikipedia.org/wiki/%D0%A2%D0%B5%D1%82%D1%80%D0%B8%D1%81; 2025 Историята на Tetris. Всички права cпазени.</p>
         <p>Разработено от Никола Миланов</p>
     </footer>
      <!-- Footer si e za avtorskite prava otdolu na stranicata  i dr neshta -->
