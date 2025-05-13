@@ -1,0 +1,108 @@
+
+body {
+    font-family: Arial, sans-serif;    /* tva pokazva shrifta za cqlata stranica, bez zasechki */
+    background-color: #f4f4f4;       /* tva e fon ako izobrajenieto ne zaredi */
+    margin: 0;      /* margin i padding premahva mqstoto okolo tqloto na stranicata */
+    padding: 0;
+    color: #333;    /* Opredelq osnovniq cvqt na teksta*/
+    line-height: 1.6;    /* Opredelq raztoqnieto mejdu redovete na teksta */
+    background-image: url('https://wallpapers.com/images/hd/90-s-tetris-game-0438qkf6y8joxkfa.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+header {
+    background-color: #5cf1b0; /* светложълт */
+    color: #333366;  /* cvqt na teksta v headera */
+    padding: 20px 0;       /* pravi da ima malko mqsto */
+    text-align: center;     /* izravnqva teksta da e v centura */
+}
+
+header h1 {
+    margin: 0;     /* phemahva mqsto */
+    font-size: 28px;   /* shrift */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #0022ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+section {
+    padding: 40px 20px;
+    background-color: #ffffff; 
+    color: #222222; 
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.flex-container img {
+    flex: 1;
+    max-width: 400px;
+}
+
+.flex-container .text-content {
+    flex: 2;
+}
+
+section h2 {
+    color: #0066cc;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+}
+
+
+ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: #5cf1b0; 
+    color: #333366;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
