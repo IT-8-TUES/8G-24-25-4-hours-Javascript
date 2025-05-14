@@ -2,46 +2,47 @@
 body {
     font-family: Arial, sans-serif;    /* tva pokazva shrifta za cqlata stranica, bez zasechki */
     background-color: #f4f4f4;       /* tva e fon ako izobrajenieto ne zaredi */
-    margin: 0;      /* margin i padding premahva mqstoto okolo tqloto na stranicata */
+    margin: 0;      /* margin i padding premahva mqstoto okolo  stranicata */
     padding: 0;
     color: #333;    /* Opredelq osnovniq cvqt na teksta*/
     line-height: 1.6;    /* Opredelq raztoqnieto mejdu redovete na teksta */
-    background-image: url('https://wallpapers.com/images/hd/90-s-tetris-game-0438qkf6y8joxkfa.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-image: url('https://wallpapers.com/images/hd/90-s-tetris-game-0438qkf6y8joxkfa.jpg'); /* zadava fonovo izobrajenie*/
+    background-size: cover;  /*kartinata zapulva celiq fon bez izrqzvane*/
+    background-position: center; /*izravnqva kartinata v sredata*/
+    background-attachment: fixed; /*kartinata ostava nepodvijna pri skrolvane*/
 }
 
 
 
 header {
-    background-color: #5cf1b0; /* светложълт */
-    color: #333366;  /* cvqt na teksta v headera */
-    padding: 20px 0;       /* pravi da ima malko mqsto */
-    text-align: center;     /* izravnqva teksta da e v centura */
+    background-color: #d1f022;
+    color: #333366;
+    padding: 20px 0;
+    text-align: center; /* This centers inline content */
 }
 
 header h1 {
-    margin: 0;     /* phemahva mqsto */
-    font-size: 28px;   /* shrift */
+    margin: 0 auto; /* Center block-level element */
+    display: block; /* Ensure it's block-level */
+    max-width: 90%; /* Prevent too wide on mobile */
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    list-style: none; /*premahva chernite tochki na spisuka */
+    padding: 0; /*premahva raztoqnie */
+    margin: 10px 0 0; /* dobavq nqkvo raztoqnie*/
+    display: flex;  /* podrejda elem horizontalno s flexbox*/
+    justify-content: center; /*taka gi centrira */
+    gap: 20px; /* pravi raztoqnie mejdu butonite*/
 }
 
 nav ul li a {
-    color: #0022ff;
+    color: #0022ff;           /* tva sa sini linkove s udebelen tekst*/
     text-decoration: none;
     font-weight: bold;
 }
 
-nav ul li a:hover {
+nav ul li a:hover {                   /* kat se sloji mishkata vurhu linka da se podchertae*/
     text-decoration: underline;
 }
 
@@ -51,25 +52,35 @@ section {
     background-color: #ffffff; 
     color: #222222; 
     margin: 20px auto;
-    max-width: 900px;
+    max-width: 900px;    /* zaoblq uglite */
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* tva dobavq leka sqnka*/
 }
 .flex-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    display: flex;           /* Подреждаме елементите в ред (хоризонтално) */
+    flex-direction: row;     /* Подреждаме снимки и текст в ред */
+    gap: 30px;               /* Разстояние между снимките и текста */
+    align-items: flex-start; /* Подравняваме елементите отгоре */
 }
 
-.flex-container img {
-    flex: 1;
-    max-width: 400px;
+.image-column {
+    display: flex;
+    flex-direction: column;  /* Подреждаме изображенията вертикално едно под друго */
+    gap: 20px;               /* Разстояние между изображенията */
+}
+
+.text-content {
+    text-align: center;               /* Отделяме повече пространство за текста */
+}
+
+.image-column img {
+    width: 375px;
+    height: auto;
+    border-radius: 10px;;
 }
 
 .flex-container .text-content {
-    flex: 2;
+    flex: 2;                          /* flex 2 pokazva che si sochi kum votrata chast ot shirinata*/
 }
 
 section h2 {
@@ -79,16 +90,16 @@ section h2 {
 }
 
 section img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px;
-    border-radius: 10px;
+    max-width: 100%;  /* tva pokazva che kartinata nikoga nqma da e po shiroka ot roditelskiq element*/
+    height: auto;      /* visochinata se izhislqva avtomatichno sprqmo shirinata*/
+    display: block;    /*prevrushta kartinkata v blokow element taka che da moje da se centrira i da vzema cql red */
+    margin: 0 auto 20px;  /*centrira kartinkata ot lqvo na dqsno i dobavq raztoqnie pod neq */
+    border-radius: 10px;  /* zaoblq uglite na izobrajenieto*/
 }
 
 
 ul {
-    margin-bottom: 20px;
+    margin-bottom: 20px;  /* ostavq mqsto otdolu i otlqvo*/
     padding-left: 20px;
 }
 
@@ -98,11 +109,25 @@ ul li {
 
 
 footer {
-    background-color: #5cf1b0; 
+    background-color: #d1f022; 
     color: #333366;
     text-align: center;
     padding: 15px;
     font-size: 14px;
-    margin-top: 40px;
+    margin-top: 40px;  /* ostavq mqsto otgore*/
 }
-
+#tetris-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+#tetris-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* da pokrie cqloto prostranstvo */
+    opacity: 0.5; /* da e polu-transparentno */
+}

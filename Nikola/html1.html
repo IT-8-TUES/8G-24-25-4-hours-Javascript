@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="style.css"> <!-- tva linkva html i css filovete -->
 </head>
 <body>  <!-- v bodito si e osnovnata inf za str, koqto se vijda ot potrebitelq -->
-    
+    <canvas id="tetris-bg"></canvas>
+
     <header>
         <h1>Историята на Tetris – Първи стъпки и правни усложнения</h1>  <!-- Tva si e zaglavie ama se polzwa samo vednuj -->
         <nav>  <!-- nav tagga opredelq navigaciqta na sekciqta -->
@@ -19,7 +20,15 @@
     <section id="step1"> <!-- section grupira i otdelq info svurzana s h2,a id e za da moje linka da otvede do sekciqta  -->
     <h2> Първи стъпки към лицензиране</h2> <!-- Tva si e kat podzaglavie -->
     <div class="flex-container">
-    <p>
+      <!-- ul e nepodreden list a li si e element ot lista -->
+       <div class="image-column">
+        <img src="https://parade.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk3NDE1OTEyMzM5NDE2OTg3/henk-rogers-tetris-environment.jpg" alt="Хенк Роджърс" height="300" width="400">
+        
+        <img src="https://tetris.wiki/images/thumb/8/86/Henk_Rogers.jpg/1200px-Henk_Rogers.jpg" alt="Допълнителна снимка" height="300" width="400">
+    </div>
+       <div class="text-content"> <!-- <div> e konteiner koito sluji za grupirane na dr elem a tekst content prisvoqva css klas na
+            tozi div tekst content -->
+       <p>
         Въпреки ентусиазма, Роджърс се сблъсква с огромни проблеми относно правата за разпространение на Tetris. Става ясно, че правата са разделени и неясно дефинирани между няколко страни:
 
     </p>
@@ -30,10 +39,7 @@
         <li><b>Tengen</b> – дъщерна компания на Atari, която пуска своя версия за NES без изричен лиценз, водещо до съдебен процес с Nintendo.</li>
     </ul>
       <!-- ul e nepodreden list a li si e element ot lista -->
-       <img src="https://parade.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk3NDE1OTEyMzM5NDE2OTg3/henk-rogers-tetris-environment.jpg" alt= "Хенк Роджърс" height="450" width="600">
-       <!-- src opedelq url adresa na imega a alt e teskt ako snimkata ne zarejda i width si e shirinata na snimkata a alt si e dopulnenie kum snimkata-->
-        <div class="text-content">
-       <p>
+            <p>
         Роджърс предприема рисковано пътуване до СССР, където лично се среща с представители на <b>ELORG</b> – държавната организация, която държи оригиналните права върху играта, тъй като е разработена от Алексей Пажитнов, съветски инженер.
         </p>
     <p>
@@ -74,6 +80,8 @@
       Целият този хаос около правата не само показва колко трудно е било да се прави международен бизнес със СССР по 
       онова време, но и поставя началото на по-строги лицензионни практики в индустрията на видеоигрите.
     </section>
+    <script src="tetris-bg.js"></script>
+</body>
     <footer>
         <p>Текстова информация:
 
@@ -88,6 +96,6 @@
 Авторски права на сайта:
 <br>
 2025 Историята на Tetris. Всички права са запазени.</p>
-        <p>Разработено от Никола Миланов</p>
+        <p>Разработено от Никола Миланов</p>   <!-- Footer si e za avtorskite prava otdolu na stranicata  i dr neshta -->
     </footer>
-     <!-- Footer si e za avtorskite prava otdolu na stranicata  i dr neshta -->
+    </html>
