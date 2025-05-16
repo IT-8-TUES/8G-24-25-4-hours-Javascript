@@ -1,0 +1,131 @@
+
+body {
+    font-family: Arial, sans-serif;    /* Zadava shrift za cqlata stranica bez zasechki (shrift bez serifi) */
+    background-color: #f4f4f4;         /* Zadava fonov cvqt na stranica, ako izobrajenieto ne se zaredi */
+    margin: 0;                         /* Premahva osnovniq margina na stranica (raztoqnie okolo) */
+    padding: 0;                        /* Premahva osnovniq padding (raztoqnie vnutre na stranica) */
+    color: #333;                       /* Zadava osnovniq cvqt na teksta (tmno-siv) */
+    line-height: 1.6;                  /* Opredelq raztoqnieto mejdu redovete na teksta */
+    background-image: url('https://wallpapers.com/images/hd/90-s-tetris-game-0438qkf6y8joxkfa.jpg'); /* Zadava fonovo izobrajenie za stranica */
+    background-size: cover;            /* Izobrajenieto zapulva celiq ekran bez izrqzvane */
+    background-position: center;       /* Izpravq kartinata v centar na ekrana */
+    background-attachment: fixed;      /* Kartinata ostava nepromenena pri skrolvane (ne se premestva pri skrolvane na stranica) */
+}
+
+header {
+    background-color: #d1f022;         /* Zadava fonov cvqt na header (gornata chast na stranica) */
+    color: #333366;                    /* Zadava cvqt na teksta v header */
+    padding: 20px 0;                   /* Dobavq raztoqnie otgore i otdolu v header */
+    text-align: center;                /* Centrirane na teksta v header */
+}
+
+header h1 {
+    margin: 0 auto;                    /* Centrirane na h1 (glavnoto zaglavie) */
+    display: block;                    /* Ubedqvame se, che h1 e blokov element */
+    max-width: 90%;                    /* Ogra7ava shirinata na h1 do 90% ot ekrana (dobro za mobilni uredbi) */
+}
+
+nav ul {
+    list-style: none;                  /* Premahva tochkite na spisuka */
+    padding: 0;                        /* Premahva padding (raztoqnie okolo spisuka) */
+    margin: 10px 0 0;                  /* Dobavq malo raztoqnie otgore na spisuka */
+    display: flex;                     /* Podrejda elementite v spisuka horizontalno s Flexbox */
+    justify-content: center;           /* Centrirane na elementite (butonite) v spisuka */
+    gap: 20px;                         /* Raztoqnie mejdu butonite (li elementite) */
+}
+
+nav ul li a {
+    color: #0022ff;                    /* Sini linkove s udebelen tekst */
+    text-decoration: none;             /* Premahva podchertavaneto pod linka */
+    font-weight: bold;                 /* Pravim teksta na linkove udebelen */
+}
+
+nav ul li a:hover {                   /* Kogato mishkata e nad linka, go podchertqvame */
+    text-decoration: underline;       /* Podchertava linka */
+}
+
+section {
+    padding: 40px 20px;                /* Raztoqnie otgore, otdolu i otstranite za sekciqta */
+    background-color: #ffffff;         /* Zadava beyliav fon za sekciqta */
+    color: #222222;                    /* Zadava tmno-siv cvqt na teksta v sekciqta */
+    margin: 20px auto;                 /* Raztoqnie okolo sekciqta, avtomatichno centrirane */
+    max-width: 900px;                  /* Ogra7ava max shirinata na sekciqta do 900px */
+    border-radius: 10px;               /* Zaoblqvame uglovete na sekciqta */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Dobavqme sveta sqnka okolo sekciqta */
+}
+
+.flex-container {
+    display: flex;                     /* Podrejda elementite v red horizontalno (flexbox) */
+    flex-direction: row;               /* Podrejda elementite v red (po podrazbirane te sa takiva) */
+    gap: 30px;                         /* Raztoqnie mejdu elementite */
+    align-items: flex-start;           /* Podravnyava elementite otgore */
+}
+
+.image-column {
+    display: flex;                     /* Podrejda elementite v kolona (vertikalno) */
+    flex-direction: column;            /* Podrejda izobrazheniqta jedno pod drugo */
+    gap: 20px;                         /* Raztoqnie mejdu izobrazheniqta */
+}
+
+.text-content {
+    text-align: center;                /* Centrirane na teksta v sekciqta */
+}
+
+.image-column img {
+    width: 375px;                      /* Shirinata na izobrazhenieto e 375px */
+    height: auto;                      /* Visochinata se prilaga avtomatichno na osnova na shirinata */
+    border-radius: 10px;               /* Zaoblqvame uglovete na izobrazhenieto */
+}
+
+.flex-container .text-content {
+    flex: 2;                           /* Tekstovata chast poluchava poveche ot shirinata ot izobrazhenieto */
+}
+
+section h2 {
+    color: #0066cc;                    /* Cvqt na zaglaviqta v sekciqta */
+    font-size: 24px;                   /* Razmer na shrifta na zaglaviqta */
+    margin-bottom: 20px;               /* Raztoqnie pod zaglaviqta */
+}
+
+section img {
+    max-width: 100%;                   /* Izobrazhenieto ne shte e po-shiroko ot roditelskiq element */
+    height: auto;                      /* Visochinata na izobrazhenieto se prilaga avtomatichno */
+    display: block;                    /* Prevrushta izobrazhenieto v blokov element */
+    margin: 0 auto 20px;               /* Centrirane na izobrazhenieto i dobavq raztoqnie pod nego */
+    border-radius: 10px;               /* Zaoblqvame uglovete na izobrazhenieto */
+}
+
+ul {
+    margin-bottom: 20px;               /* Dobavq raztoqnie ot dolu na spisuka */
+    padding-left: 20px;                 /* Dobavq raztoqnie ot lqvata strana na spisuka */
+}
+
+ul li {
+    margin-bottom: 10px;               /* Raztoqnie pod vseki element ot spisuka */
+}
+
+footer {
+    background-color: #d1f022;         /* Zadava fonov cvqt na footer (dolna chast na stranica) */
+    color: #333366;                    /* Zadava cvqt na teksta v footer */
+    text-align: center;                /* Centrirane na teksta v footer */
+    padding: 15px;                      /* Dobavq raztoqnie otgore i otdolu v footer */
+    font-size: 14px;                    /* Razmer na shrifta v footer */
+    margin-top: 40px;                   /* Raztoqnie otgore na footer */
+}
+
+#tetris-bg {
+    position: fixed;                   /* Poziciqta e statichna i se ostava na ekrana (ne se premestva pri skrolvane) */
+    top: 0;                            /* Poziciq otgore */
+    left: 0;                           /* Poziciq otlqvo */
+    z-index: -1;                       /* Zadava po-niska z-index стойност, така че да бъде на заден план */
+    width: 100%;                       /* Shirinata na izobrajenieto zapulva celiq ekran */
+    height: 100%;                      /* Visochinata na izobrajenieto e 100% */
+    background-color: #000000;         /* Tcherno zadno izobrajenie */
+}
+
+#tetris-bg img {
+    width: 100%;                       /* Izobrajenieto pokriva celiq ekran */
+    height: 100%;                      /* Visochinata na izobrajenieto e 100% */
+    object-fit: cover;                 /* Pokriva prostranstvoto, bez da se deformira izobrajenieto */
+    opacity: 0.5;                      /* Namalyava opacnostta na izobrajenieto, stava polu-transparentno */
+}
