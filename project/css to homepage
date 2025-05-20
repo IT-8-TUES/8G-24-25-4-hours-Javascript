@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: sans-serif;
+  background: #4d005d;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+h1 {
+  color: #0ff;
+}
+
+.box {
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 600px;
+  border: 2px solid #0ff;
+  border-radius: 10px;
+  background: #4d005d;
+}
+
+img {
+  width: 250px;
+  border: 2px solid #0ff;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+.falling {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  animation: fall linear;
+}
