@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <title>История на Тетрис</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script>
+  const colors = ['#f44', '#44f', '#4f4', '#ff4', '#4ff', '#f94', '#c4f'];
+  function createShape() {
+    const d = document.createElement('div');
+    d.className = 'falling';
+    d.style.background = colors[Math.floor(Math.random() * colors.length)];
+    d.style.left = Math.random() * window.innerWidth + 'px';
+    d.style.top = '-30px';
+    d.style.animationDuration = (2 + Math.random() * 3) + 's';
+    document.body.appendChild(d);
+    d.addEventListener('animationend', () => d.remove());
+  }
+  setInterval(createShape, 300);
+</script>
+
+<h1>История на Тетрис</h1>
+
+<div class="box">
+  <h3>За създателя</h3>
+  <p>Алексей Пажитнов създава Тетрис през 1984 г. Играта става световно известна.</p>
+  <img src="https://www.digitaltrends.com/wp-content/uploads/2015/02/Alexey-Pajitnov-Tetris-Creator.jpg?fit=1274%2C849&p=1" alt="Алексей Пажитнов">
+</div>
+
+<div class="box">
+  <h3>Информация</h3>
+  <a href="page1.html">Първа</a> |
+  <a href="page2.html">Втора</a> |
+  <a href="page3.html">Трета</a> |
+  <a href="page4.html">Четвърта</a>
+</div>
+
+<div class="box">
+  <h3>Забавни неща</h3>
+  <p>Очаквайте игри и викторини за Тетрис!</p>
+</div>
+
+</body>
+</html>
