@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <title>История на Tetris: Конфликти и политика</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #111;
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+            overflow-x: hidden;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+            z-index: 1;
+            position: relative;
+        }
+        h1, h2, h3, p, ul, a {
+            text-align: center;
+        }
+        p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        img {
+            max-width: 90%;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        a {
+            color: #00f0ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        iframe {
+            margin: 20px 0;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 720px;
+            height: 405px;
+        }
+        #tetris-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100vw;
+            height: 100vh;
+            opacity: 0.2;
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="tetris-bg"></canvas>
+
+<div class="container">
+    <h1>🧩 История на Tetris: Конфликти и политика</h1>
+
+    <h2>⚖️ Сложности с правата и конкуренцията</h2>
+    <p>
+        Tetris, създаден през 1984 г. от съветския програмист Алексей Пажитнов, бързо добива световна популярност. Въпреки това правата върху играта стават обект на сложна правна битка.
+    </p>
+    <p>
+        Британският предприемач Робърт Стайн се опитва да придобие правата чрез неясни лицензионни договори. Малко по-късно Робърт Максуел и неговата компания Mirrorsoft също претендират за контрол.
+    </p>
+    <p>
+        Проблемът се усложнява, защото различни компании мислят, че имат права за различни платформи, но реално само съветската агенция ELORG притежава законните права.
+    </p>
+    <img src="https://sovietime.ru/images/AVTOMAT-SV/Pazhitnoov_60ec1.jpg" alt="Алексей Пажитнов" width="420" height="400">
+    <p><i>Алексей Пажитнов – създателят на Tetris</i></p>
+
+    <img src="https://sdmntprwestus2.oaiusercontent.com/files/00000000-c5d4-61f8-b6f2-1b8807c1b625/raw?se=2025-05-18T21%3A08%3A28Z&sp=r&sv=2024-08-04&sr=b&scid=00000000-0000-0000-0000-000000000000&skoid=24a7dec3-38fc-4904-b888-8abe0855c442&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-18T00%3A30%3A45Z&ske=2025-05-19T00%3A30%3A45Z&sks=b&skv=2024-08-04&sig=foIa0sa1910yp6BIoO0mbRw1QXCoRN34cHzhsuVKq2s%3D" alt="Лицензионни конфликти за Tetris" width="420" lenght="420">
+    <p><i>Диаграма, показваща борбата за правата между различни компании</i></p>
+
+    <h2>🌍 Пътуване до Съветския съюз и бюрократични предизвикателства</h2>
+    <p>
+        Американският предприемач Хенк Роджърс заминава за СССР, за да преговаря директно с ELORG. Целта му – да осигури ексклузивни права за Nintendo.
+    </p>
+    <p>
+        В Москва той се сблъсква с бюрократични лабиринти, двусмислени преводи и дори с намесата на КГБ. Въпреки това, с упоритост и честност, Хенк печели доверието на ELORG.
+    </p>
+    <p>
+        След напрегнати срещи и борба с корупцията, той успява да подпише директен договор, който отваря пътя за включването на Tetris в Game Boy – момент, който завинаги променя историята на видеоигрите.
+    </p>
+    <img src="https://m.media-amazon.com/images/M/MV5BMDZhY2Y4ZGQtODk4MC00NGQwLWFiMWItNzU2M2Q3Nzk2MmVlXkEyXkFqcGc@._V1_.jpg" alt="Хенк Роджърс във филма Tetris (2023)" width="370" lenght="400">
+    <p><i>Хенк Роджърс във филма Tetris (2023)</i></p>
+
+    <h3>🎥 Видео: Истинската история зад Tetris</h3>
+    <iframe src="https://www.youtube.com/embed/-BLM1naCfME" title="Истинската история зад Tetris" allowfullscreen></iframe>
+
+    <h3>📚 Полезни връзки</h3>
+    <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Tetris_(video_game)" target="_blank">Wikipedia: История на Tetris</a></li>
+        <li><a href="https://www.imdb.com/title/tt12758060/" target="_blank">Tetris (2023) – IMDb</a></li>
+        <li><a href="https://tetris.wiki/" target="_blank">Tetris Wiki</a></li>
+    </ul>
+</div>
+
+ <script>
+        const canvas = document.getElementById('tetris-bg');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const shapes = [
+            [[1,1,1,1]],               // I
+            [[1,1],[1,1]],             // O
+            [[0,1,0],[1,1,1]],         // T
+            [[1,0,0],[1,1,1]],         // J
+            [[0,0,1],[1,1,1]],         // L
+            [[0,1,1],[1,1,0]],         // S
+            [[1,1,0],[0,1,1]]          // Z
+        ];
+
+        const blocks = [];
+
+        class FallingBlock {
+            constructor() {
+                this.shape = shapes[Math.floor(Math.random() * shapes.length)];
+                this.size = 15; // По-малки блокчета
+                this.x = Math.random() * canvas.width;
+                this.y = -this.shape.length * this.size;
+                this.speed = 0.5 + Math.random() * 1;
+                this.color = `hsl(${Math.random()*360}, 90%, 60%)`;
+            }
+
+            draw() {
+                ctx.fillStyle = this.color;
+                for (let row = 0; row < this.shape.length; row++) {
+                    for (let col = 0; col < this.shape[row].length; col++) {
+                        if (this.shape[row][col]) {
+                            ctx.fillRect(
+                                this.x + col * this.size,
+                                this.y + row * this.size,
+                                this.size - 1,
+                                this.size - 1
+                            );
+                        }
+                    }
+                }
+            }
+
+            update() {
+                this.y += this.speed;
+                if (this.y > canvas.height) {
+                    this.y = -this.shape.length * this.size;
+                    this.x = Math.random() * canvas.width;
+                    this.shape = shapes[Math.floor(Math.random() * shapes.length)];
+                }
+                this.draw();
+            }
+        }
+
+        for (let i = 0; i < 50; i++) {
+            blocks.push(new FallingBlock());
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            blocks.forEach(block => block.update());
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+</script>
+
+</body>
+</html>
