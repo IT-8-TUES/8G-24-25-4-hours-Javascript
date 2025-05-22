@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Наследството на Тетрис</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            background: linear-gradient(to bottom, #111, #000);
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px 20px 100px;
+            display: grid;
+            gap: 20px;
+        }
+
+        .box {
+            background-color: rgba(20, 20, 20, 0.85);
+            border: 3px solid #333;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 15px #00f0ff55;
+        }
+
+        .box img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            color: #00ffff;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        a {
+            color: #00ffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .tetris-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url('https://i.imgur.com/UZk49Rf.png') repeat-x;
+            background-size: contain;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="tetris-footer"></div>
+
+    <div class="container">
+        <h1>Наследството на Тетрис</h1>
+
+        <div class="box">
+            <p><b>Тетрис</b> не е просто видеоигра — той е глобално културно явление, което е оставило траен отпечатък върху историята на игрите, технологиите и дори науката. Създаден през 1984 г. от Алексей Пажитнов в Съветския съюз, Тетрис е пример за това как една проста идея може да завладее целия свят.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Tetris_Worlds_logo.jpg" alt="Tetris Logo">
+        </div>
+
+        <div class="box">
+            <p>Играта бързо добива популярност заради лесния си, но изключително пристрастяващ геймплей. Чрез комбинацията от падащи блокове и нуждата от бърза мисъл, Тетрис предоставя безкрайно разнообразие от ситуации с минимални правила. Това прави играта достъпна и разбираема за хора от всякаква възраст и култура.</p>
+        </div>
+
+        <div class="box">
+            <p>Един от най-важните моменти в историята на Тетрис е включването му като вградена игра в първото поколение на <i>Nintendo Game Boy</i>. Това решение изиграва решаваща роля за успеха както на играта, така и на конзолата, превръщайки Тетрис в символ на портативния гейминг.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Game-Boy-FL.jpg" alt="Game Boy Tetris">
+        </div>
+
+        <div class="box">
+            <p>С времето Тетрис преминава през множество еволюции — от аркадни машини и компютри, до мобилни телефони, VR и съвременни платформи. Всяка нова версия носи нещо ново, но запазва същността на оригиналната концепция.</p>
+        </div>
+
+        <div class="box">
+            <p>Тетрис оказва влияние и върху науката — психолози и невролози използват играта в изследвания за ефекти върху мозъчната дейност, визуално-пространственото мислене и дори като терапия при посттравматичен стрес.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Tetris_effect_example.jpg" alt="Tetris Effect Research">
+        </div>
+
+        <div class="box">
+            <p>През 2023 година историята на Тетрис беше адаптирана във филм, който разказва драматичния процес по лицензиране на играта в условията на Студената война, включително и приятелството между Пажитнов и Хенк Роджърс.</p>
+            <img src="https://m.media-amazon.com/images/M/MV5BZjUyNjEyNDctM2VmNS00MTE1LTg1MzgtZjAyM2FiZDdkMmViXkEyXkFqcGdeQXVyMTMzNzIyNDc1._V1_FMjpg_UX1000_.jpg" alt="Tetris Movie Poster">
+        </div>
+
+        <div class="box">
+            <p>Днес Тетрис е не само жива класика, а и доказателство, че гениалността понякога се крие в простотата. Играта продължава да бъде обичана и почитана от милиони хора по света.</p>
+        </div>
+
+        <p style="text-align: center;"><a href="main page">⬅ Обратно към началната страница</a></p>
+    </div>
+</body>
+</html>
