@@ -4,7 +4,7 @@ body {
     background-color: #f4f4f4;         
     margin: 0;                        
     padding: 0;                       
-    color: #333;                     
+    color: #2d2929;                     
     line-height: 1.6;                 
     background-image: url('https://wallpapers.com/images/hd/90-s-tetris-game-0438qkf6y8joxkfa.jpg'); 
     background-size: cover;          
@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #d1f022;        
+    background-color: #52f022;        
     color: #333366;                  
     padding: 20px 0;                 
     text-align: center;               
